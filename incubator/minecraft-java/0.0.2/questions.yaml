@@ -228,6 +228,15 @@ questions:
             type: string
             required: true
             default: "easy"
+            enum:
+              - value: peaceful
+                description: Peaceful
+              - value: easy
+                description: Easy
+              - value: normal
+                description: Normal
+              - value: hard
+                description: Hard
         - variable: whitelist
           label: "Whitelist"
           schema:
@@ -262,37 +271,37 @@ questions:
           label: "Enable/Disable Nether"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: announcePlayerAchievements
           label: "Enable/Disable Announceing Player Achievements"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: enableCommandBlock
           label: "Enable/Disable Command Blocks"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
         - variable: forcegameMode
           label: "Enable/Disable Force Gamemode"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
         - variable: generateStructures
           label: "Enable/Disable Generate Structures"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: hardcore
           label: "Enable/Disable Hardcore Mode"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
         - variable: maxBuildHeight
           label: "Max World Build Height"
@@ -310,19 +319,19 @@ questions:
           label: "Enable/Disable Spawning Animals"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: spawnMonsters
           label: "Enable/Disable Spawning Monsters"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: spawnNPCs
           label: "Enable/Disable Spawning NPCs"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: viewDistance
           label: "Server View Distance"
@@ -361,7 +370,7 @@ questions:
           label: "Enable/Disable PVP"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
         - variable: levelType
           label: "Level Type"
@@ -397,7 +406,7 @@ questions:
           label: "Enable/Disable Online Mode"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: memory
           label: "Server Memory"
