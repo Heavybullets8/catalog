@@ -18,7 +18,7 @@ name: minecraft-java
 sources:
   - https://github.com/itzg/docker-minecraft-server
   - https://hub.docker.com/r/itzg/minecraft-server
-version: 0.1.4
+version: 0.1.5
 annotations:
   truecharts.org/catagories: |
     - media

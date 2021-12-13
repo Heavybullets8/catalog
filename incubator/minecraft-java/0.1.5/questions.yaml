@@ -227,31 +227,27 @@ questions:
                 description: "Sponge Vanilla"
               - value: "CURSEFORGE"
                 description: "Curseforge"
-        - variable: forge
-          label: "Show Forge settings"
+        - variable: FORGEVERSION
+          label: "Forge Version"
           schema:
-            type: boolean
-            default: false
+            type: string
+            required: false
+            default: ""
             show_if: [[TYPE, "=", "FORGE"]]
-            subquestions:
-              - variable: FORGEVERSION
-                label: "Forge Version"
-                schema:
-                  type: string
-                  required: false
-                  default: ""
-              - variable: FORGE_INSTALLER
-                label: "Forge Installer"
-                schema:
-                  type: string
-                  required: false
-                  default: ""
-              - variable: FORGE_INSTALLER_URL
-                label: "Forge Installer URL"
-                schema:
-                  type: string
-                  required: false
-                  default: ""
+        - variable: FORGE_INSTALLER
+          label: "Forge Installer"
+          schema:
+            type: string
+            required: false
+            default: ""
+            show_if: [[TYPE, "=", "FORGE"]]
+        - variable: FORGE_INSTALLER_URL
+          label: "Forge Installer URL"
+          schema:
+            type: string
+            required: false
+            default: ""
+            show_if: [[TYPE, "=", "FORGE"]]
         - variable: DIFFICULTY
           label: "Difficulty"
           schema:
