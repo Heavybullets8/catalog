@@ -190,9 +190,9 @@ questions:
         - variable: EULA
           label: "Minecraft Eula"
           schema:
-            type: boolean
+            type: string
             required: true
-            default: false
+            default: "FALSE"
         - variable: VERSION
           label: "Minecraft Version - LATEST, SNAPSHOT, or verison"
           schema:
