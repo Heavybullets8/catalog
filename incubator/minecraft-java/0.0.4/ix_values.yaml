@@ -41,10 +41,3 @@ service:
       main:
         port: 25565
         targetPort: 25565
-  supervisor:
-    enabled: true
-    ports:
-      supervisor:
-        enabled: true
-        port: 25565
-        targetPort: 25565
