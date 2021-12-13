@@ -188,11 +188,16 @@ questions:
             default: "002"
 
         - variable: EULA
-          label: "Minecraft Eula"
+          label: "Minecraft Eula - Link in readme sources"
           schema:
             type: string
             required: true
             default: "FALSE"
+            enum: 
+              - value: FALSE
+                description: False
+              - value: TRUE
+                description: True
         - variable: VERSION
           label: "Minecraft Version - LATEST, SNAPSHOT, or verison"
           schema:
@@ -222,6 +227,14 @@ questions:
                 description: "Sponge Vanilla"
               - value: CURSEFORGE
                 description: "Curseforge"
+            show_subquestions_if: "FORGE"
+            subquestions:
+              - variable: FORGEVERSION
+                description: "Forge Version"
+              - variable: FORGE_INSTALLER
+                description: "Forge Installer"
+              - variable: FORGE_INSTALLER_URL
+                description: "Forge Installer URL"
         - variable: DIFFICULTY
           label: "Difficulty"
           schema:
@@ -408,24 +421,31 @@ questions:
             type: boolean
             required: false
             default: true
-        - variable: MEMORY
-          label: "Server Memory"
+        - variable: advanced
+          label: "Show Advanced Server Settings"
           schema:
-            type: string
-            required: true
-            default: "2048M"
-        - variable: JVM_OPTS
-          label: "JVM Options"
-          schema:
-            type: string
-            required: false
-            default: ""
-        - variable: JVM_XX_OPTS
-          label: "JVM -X Options"
-          schema:
-            type: string
-            required: false
-            default: ""
+            type: boolean
+            default: false
+            show_subquestions_if: true
+            subquestions:
+              - variable: MEMORY
+                label: "Server Memory"
+                schema:
+                  type: string
+                  required: true
+                  default: "2048M"
+              - variable: JVM_OPTS
+                label: "JVM Options"
+                schema:
+                  type: string
+                  required: false
+                  default: ""
+              - variable: JVM_XX_OPTS
+                label: "JVM -X Options"
+                schema:
+                  type: string
+                  required: false
+                  default: ""
 
   - variable: envList
     label: "Image environment"
