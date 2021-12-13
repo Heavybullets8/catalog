@@ -1,6 +1,16 @@
 # Changelog<br>
 
 
+<a name="minecraft-java-0.0.9"></a>
+### minecraft-java-0.0.9 (2021-12-13)
+
+
+
+<a name="minecraft-java-0.0.9"></a>
+### minecraft-java-0.0.9 (2021-12-13)
+
+
+
 <a name="minecraft-java-0.0.8"></a>
 ### minecraft-java-0.0.8 (2021-12-13)
 
