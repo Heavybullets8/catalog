@@ -187,19 +187,19 @@ questions:
             type: string
             default: "002"
 
-        - variable: eula
+        - variable: EULA
           label: "Minecraft Eula"
           schema:
             type: boolean
             required: true
             default: false
-        - variable: version
+        - variable: VERSION
           label: "Minecraft Version - LATEST, SNAPSHOT, or verison"
           schema:
             type: string
             required: true
             default: "LATEST"
-        - variable: type
+        - variable: TYPE
           label: "Server Type"
           schema:
             type: string
@@ -222,7 +222,7 @@ questions:
                 description: "Sponge Vanilla"
               - value: CURSEFORGE
                 description: "Curseforge"
-        - variable: difficulty
+        - variable: DIFFICULTY
           label: "Difficulty"
           schema:
             type: string
@@ -237,115 +237,115 @@ questions:
                 description: Normal
               - value: hard
                 description: Hard
-        - variable: whitelist
+        - variable: WHITELIST
           label: "Whitelist"
           schema:
             type: string
             required: false
             default: ""
-        - variable: ops
+        - variable: OPS
           label: "OPs"
           schema:
             type: string
             required: false
             default: ""
-        - variable: icon
+        - variable: ICON
           label: "URL to Server Icon"
           schema:
             type: string
             required: false
             default: ""
-        - variable: maxPlayers
+        - variable: MAX_PLAYERS
           label: "Max Connected Players"
           schema:
             type: int
             required: true
             default: 20
-        - variable: maxWorldSize
+        - variable: MAX_WORLD_SIZE
           label: "World Border Radius in blocks"
           schema:
             type: int
             required: true
             default: 10000
-        - variable: allowNether
+        - variable: ALLOW_NETHER
           label: "Enable/Disable Nether"
           schema:
             type: boolean
             required: false
             default: true
-        - variable: announcePlayerAchievements
+        - variable: ANNOUNCE_PLAYER_ACHIEVEMENTS
           label: "Enable/Disable Announceing Player Achievements"
           schema:
             type: boolean
             required: false
             default: true
-        - variable: enableCommandBlock
+        - variable: ENABLE_COMMAND_BLOCK
           label: "Enable/Disable Command Blocks"
           schema:
             type: boolean
             required: false
             default: false
-        - variable: forcegameMode
+        - variable: FORCE_GAMEMODE
           label: "Enable/Disable Force Gamemode"
           schema:
             type: boolean
             required: false
             default: false
-        - variable: generateStructures
+        - variable: GENERATE_STRUCTURES
           label: "Enable/Disable Generate Structures"
           schema:
             type: boolean
             required: false
             default: true
-        - variable: hardcore
+        - variable: HARDCORE
           label: "Enable/Disable Hardcore Mode"
           schema:
             type: boolean
             required: false
             default: false
-        - variable: maxBuildHeight
+        - variable: MAX_BUILD_HEIGHT
           label: "Max World Build Height"
           schema:
             type: int
             required: true
             default: 256
-        - variable: maxTickTime
+        - variable: MAX_TICK_TIME
           label: "Max Tick Time"
           schema:
             type: int
             required: true
             default: 60000
-        - variable: spawnAnimals
+        - variable: SPAWN_ANIMALS
           label: "Enable/Disable Spawning Animals"
           schema:
             type: boolean
             required: false
             default: true
-        - variable: spawnMonsters
+        - variable: SPAWN_MONSTERS
           label: "Enable/Disable Spawning Monsters"
           schema:
             type: boolean
             required: false
             default: true
-        - variable: spawnNPCs
+        - variable: SPAWN_NPCS
           label: "Enable/Disable Spawning NPCs"
           schema:
             type: boolean
             required: false
             default: true
-        - variable: viewDistance
+        - variable: VIEW_DISTANCE
           label: "Server View Distance"
           schema:
             type: int
             required: true
             default: 16
-        - variable: levelSeed
+        - variable: SEED
           label: "Level Seed"
           schema:
             type: string
             required: false
             default: ""
-        - variable: gameMode
+        - variable: MODE
           label: "Default Gamemode"
           schema:
             type: string
@@ -360,31 +360,31 @@ questions:
                 description: "Adventure"
               - value: "spectator"
                 description: "Spectator"
-        - variable: motd
+        - variable: MOTD
           label: "Server Message of the Day"
           schema:
             type: string
             required: false
             default: ""
-        - variable: pvp
+        - variable: PVP
           label: "Enable/Disable PVP"
           schema:
             type: boolean
             required: false
             default: false
-        - variable: levelType
+        - variable: LEVEL_TYPE
           label: "Level Type"
           schema:
             type: string
             required: true
             default: "DEFAULT"
-        - variable: generatorSettings
+        - variable: GENERATOR_SETTINGS
           label: "Generator Settings"
           schema:
             type: string
             required: false
             default: ""
-        - variable: worldSaveName
+        - variable: LEVEL
           label: "World Save Name"
           schema:
             type: string
@@ -396,31 +396,31 @@ questions:
             type: string
             required: false
             default: ""
-        - variable: forceReDownload
+        - variable: FORCE_REDOWNLOAD
           label: "Force redownload server files"
           schema:
             type: string
             required: false
             default: ""
-        - variable: onlineMode
+        - variable: ONLINE_MODE
           label: "Enable/Disable Online Mode"
           schema:
             type: boolean
             required: false
             default: true
-        - variable: memory
+        - variable: MEMORY
           label: "Server Memory"
           schema:
             type: string
             required: true
             default: "2048M"
-        - variable: jvmOpts
+        - variable: JVM_OPTS
           label: "JVM Options"
           schema:
             type: string
             required: false
             default: ""
-        - variable: jvmXXOpts
+        - variable: JVM_XX_OPTS
           label: "JVM -X Options"
           schema:
             type: string
