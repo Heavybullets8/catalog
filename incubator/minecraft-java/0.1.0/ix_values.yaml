@@ -1,7 +1,7 @@
 image:
   repository: itzg/minecraft-server
-  tag: 2021.25.0-java17
-  pullPolicy: IfNotPresent
+  tag: latest
+  pullPolicy: Always
 
 env:
   EULA: "FALSE"

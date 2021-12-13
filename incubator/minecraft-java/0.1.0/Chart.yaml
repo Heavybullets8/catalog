@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: "a17"
+appVersion: "latest"
 dependencies:
 - name: common
   repository: https://truecharts.org
@@ -18,7 +18,7 @@ name: minecraft-java
 sources:
   - https://github.com/itzg/docker-minecraft-server
   - https://hub.docker.com/r/itzg/minecraft-server
-version: 0.0.9
+version: 0.1.0
 annotations:
   truecharts.org/catagories: |
     - media

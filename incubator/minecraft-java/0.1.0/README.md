@@ -1,6 +1,6 @@
 # minecraft-java
 
-![Version: 0.0.9](https://img.shields.io/badge/Version-0.0.9-informational?style=flat-square) ![AppVersion: a17](https://img.shields.io/badge/AppVersion-a17-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 Minecraft Java Dedicated Server
 
@@ -54,9 +54,9 @@ Kubernetes: `>=1.16.0-0`
 | env.TYPE | string | `"VANILLA"` |  |
 | env.VERSION | string | `"LATEST"` |  |
 | env.VIEW_DISTANCE | int | `16` |  |
-| image.pullPolicy | string | `"IfNotPresent"` |  |
+| image.pullPolicy | string | `"Always"` |  |
 | image.repository | string | `"itzg/minecraft-server"` |  |
-| image.tag | string | `"2021.25.0-java17"` |  |
+| image.tag | string | `"latest"` |  |
 | persistence.data.enabled | bool | `true` |  |
 | persistence.data.mountPath | string | `"/data"` |  |
 | service.main.ports.main.port | int | `25565` |  |
