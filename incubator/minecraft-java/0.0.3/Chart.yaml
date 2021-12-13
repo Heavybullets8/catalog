@@ -6,7 +6,7 @@ dependencies:
   version: 8.9.18
 description: Minecraft Java Dedicated Server
 home: https://github.com/truecharts/apps/tree/master/charts/incubator/minecraft-java
-icon: https://raw.githubusercontent.com/truecharts/apps/master/stable/incubator/minecraft-java/icon.png?raw=true
+icon: https://raw.githubusercontent.com/Dyllan2000alfa/apps/minecraft/charts/incubator/minecraft-java/icon.png
 keywords:
   - minecraft
 kubeVersion: ">=1.16.0-0"
@@ -18,7 +18,7 @@ name: minecraft-java
 sources:
   - https://github.com/itzg/docker-minecraft-server
   - https://hub.docker.com/r/itzg/minecraft-server
-version: 0.0.2
+version: 0.0.3
 annotations:
   truecharts.org/catagories: |
     - media
