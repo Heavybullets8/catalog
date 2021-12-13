@@ -390,7 +390,7 @@ questions:
             type: string
             required: true
             default: "world"
-        - variable: downloadWorldUrl
+        - variable: WORLD
           label: "URL of world download"
           schema:
             type: string

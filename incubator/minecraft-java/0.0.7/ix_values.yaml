@@ -1,6 +1,6 @@
 image:
   repository: itzg/minecraft-server
-  tag: 2021.25.0-java8-multiarch
+  tag: 2021.25.0-java11
   pullPolicy: IfNotPresent
 
 env:
