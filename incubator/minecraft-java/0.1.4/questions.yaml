@@ -227,7 +227,12 @@ questions:
                 description: "Sponge Vanilla"
               - value: "CURSEFORGE"
                 description: "Curseforge"
-            show_subquestions_if: "FORGE"
+        - variable: forge
+          label: "Show Forge settings"
+          schema:
+            type: boolean
+            default: false
+            show_if: [[TYPE, "=", "FORGE"]]
             subquestions:
               - variable: FORGEVERSION
                 label: "Forge Version"
