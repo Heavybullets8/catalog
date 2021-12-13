@@ -193,11 +193,11 @@ questions:
             type: string
             required: true
             default: "FALSE"
-            enum: 
-              - value: FALSE
-                description: False
-              - value: TRUE
-                description: True
+            enum:
+              - value: "FALSE"
+                description: "False"
+              - value: "TRUE"
+                description: "True"
         - variable: VERSION
           label: "Minecraft Version - LATEST, SNAPSHOT, or verison"
           schema:
@@ -211,30 +211,42 @@ questions:
             required: true
             default: "VANILLA"
             enum:
-              - value: VANILLA
+              - value: "VANILLA"
                 description: "Vanilla"
-              - value: FORGE
+              - value: "FORGE"
                 description: "Forge"
-              - value: SPIGOT
+              - value: "SPIGOT"
                 description: "Spigot"
-              - value: BUKKIT
+              - value: "BUKKIT"
                 description: "Bukkit"
-              - value: PAPER
+              - value: "PAPER"
                 description: "Paper"
-              - value: FTBA
+              - value: "FTBA"
                 description: "FTBA"
-              - value: SPONGEVANILLA
+              - value: "SPONGEVANILLA"
                 description: "Sponge Vanilla"
-              - value: CURSEFORGE
+              - value: "CURSEFORGE"
                 description: "Curseforge"
             show_subquestions_if: "FORGE"
             subquestions:
               - variable: FORGEVERSION
-                description: "Forge Version"
+                label: "Forge Version"
+                schema:
+                  type: string
+                  required: false
+                  default: ""
               - variable: FORGE_INSTALLER
-                description: "Forge Installer"
+                label: "Forge Installer"
+                schema:
+                  type: string
+                  required: false
+                  default: ""
               - variable: FORGE_INSTALLER_URL
-                description: "Forge Installer URL"
+                label: "Forge Installer URL"
+                schema:
+                  type: string
+                  required: false
+                  default: ""
         - variable: DIFFICULTY
           label: "Difficulty"
           schema:
