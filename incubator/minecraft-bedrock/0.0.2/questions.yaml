@@ -264,7 +264,7 @@ questions:
           label: "Enable/Disable Cheats"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
         - variable: MAX_PLAYERS
           label: "Max players"
@@ -277,13 +277,13 @@ questions:
           label: "Online mode"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: WHITE_LIST
           label: "White list"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
         - variable: VIEW_DISTANCE
           label: "View distance"
@@ -381,7 +381,7 @@ questions:
           label: "Enable/Disable Player movement correction"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
 
   - variable: envList
