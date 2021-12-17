@@ -1,6 +1,6 @@
 # minecraft-java
 
-![Version: 0.1.10](https://img.shields.io/badge/Version-0.1.10-informational?style=flat-square) ![AppVersion: a17](https://img.shields.io/badge/AppVersion-a17-informational?style=flat-square)
+![Version: 0.1.11](https://img.shields.io/badge/Version-0.1.11-informational?style=flat-square) ![AppVersion: a17](https://img.shields.io/badge/AppVersion-a17-informational?style=flat-square)
 
 Minecraft Java Dedicated Server
 
