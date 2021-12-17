@@ -25,28 +25,10 @@ groups:
     description: "Addon Configuration"
   - name: "Advanced"
     description: "Advanced Configuration"
-  - name: "Java Version"
-    description: "Java Version"
 questions:
-  - variable: portal
-    group: "Container Image"
-    label: "Configure Portal Button"
-    schema:
-      type: dict
-      hidden: true
-      attrs:
-        - variable: enabled
-          label: "Enable"
-          description: "enable the portal button"
-          schema:
-            hidden: true
-            editable: false
-            type: boolean
-            default: true
   - variable: image
-    description: "Docker Image Details"
-    label: "Docker Image"
-    group: "Java Version"
+    group: "Container Image"
+    label: "Java Version"
     schema:
       type: dict
       required: true
@@ -55,13 +37,13 @@ questions:
           label: "Java version"
           schema:
             type: string
-            default: "21.26.0-java17"
+            default: "21.26.0@sha256:75c9c1555461a9e3df22c99e50ed8c6767adaa3364c8a481dac7bf0d5a296d4c"
             enum:
-              - value: "21.26.0-java8-multiarch"
+              - value: "21.26.0-java8-multiarch@sha256:9c1bf8f374cb97d5faa237f5d8329f90da11f1968a6b0f2f9c8b3afc2033ded2"
                 description: "Java 8"
-              - value: "21.26.0-java11"
+              - value: "21.26.0-java11@sha256:d98ef51b1da69a64af754ff4d3e7942ea24bf78dda86bf5d8f7274699e0691cb"
                 description: "Java 11"
-              - value: "21.26.0-java17"
+              - value: "21.26.0@sha256:75c9c1555461a9e3df22c99e50ed8c6767adaa3364c8a481dac7bf0d5a296d4c"
                 description: "Java 17"
   - variable: global
     label: "global settings"

@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: "a17"
+appVersion: "21.26.0"
 dependencies:
 - name: common
   repository: https://truecharts.org
@@ -11,14 +11,13 @@ keywords:
   - minecraft
 kubeVersion: ">=1.16.0-0"
 maintainers:
-- email: info@truecharts.org
-  name: TrueCharts
-  url: https://truecharts.org
+- email: dyllan@tinoco.casa
+  name: Dyllan Tinoco
 name: minecraft-java
 sources:
   - https://github.com/itzg/docker-minecraft-server
   - https://hub.docker.com/r/itzg/minecraft-server
-version: 0.1.11
+version: 0.1.12
 annotations:
   truecharts.org/catagories: |
     - media

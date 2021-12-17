@@ -1,6 +1,6 @@
 # minecraft-java
 
-![Version: 0.1.11](https://img.shields.io/badge/Version-0.1.11-informational?style=flat-square) ![AppVersion: a17](https://img.shields.io/badge/AppVersion-a17-informational?style=flat-square)
+![Version: 0.1.12](https://img.shields.io/badge/Version-0.1.12-informational?style=flat-square) ![AppVersion: 21.26.0](https://img.shields.io/badge/AppVersion-21.26.0-informational?style=flat-square)
 
 Minecraft Java Dedicated Server
 
@@ -10,7 +10,7 @@ Minecraft Java Dedicated Server
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| TrueCharts | info@truecharts.org | https://truecharts.org |
+| Dyllan Tinoco | dyllan@tinoco.casa |  |
 
 ## Source Code
 
@@ -56,9 +56,10 @@ Kubernetes: `>=1.16.0-0`
 | env.VIEW_DISTANCE | int | `16` |  |
 | image.pullPolicy | string | `"Always"` |  |
 | image.repository | string | `"itzg/minecraft-server"` |  |
-| image.tag | string | `"java17"` |  |
+| image.tag | string | `"21.26.0@sha256:75c9c1555461a9e3df22c99e50ed8c6767adaa3364c8a481dac7bf0d5a296d4c"` |  |
 | persistence.data.enabled | bool | `true` |  |
 | persistence.data.mountPath | string | `"/data"` |  |
+| portal.enabled | bool | `false` |  |
 | service.main.ports.main.port | int | `25565` |  |
 | service.main.ports.main.targetPort | int | `25565` |  |
 
