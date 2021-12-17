@@ -1,6 +1,6 @@
 # minecraft-java
 
-![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![AppVersion: a11](https://img.shields.io/badge/AppVersion-a11-informational?style=flat-square)
+![Version: 0.1.10](https://img.shields.io/badge/Version-0.1.10-informational?style=flat-square) ![AppVersion: a17](https://img.shields.io/badge/AppVersion-a17-informational?style=flat-square)
 
 Minecraft Java Dedicated Server
 
@@ -23,7 +23,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://truecharts.org | common | 8.9.18 |
+| https://truecharts.org | common | 8.9.21 |
 
 ## Values
 
@@ -56,7 +56,7 @@ Kubernetes: `>=1.16.0-0`
 | env.VIEW_DISTANCE | int | `16` |  |
 | image.pullPolicy | string | `"Always"` |  |
 | image.repository | string | `"itzg/minecraft-server"` |  |
-| image.tag | string | `"java11"` |  |
+| image.tag | string | `"java17"` |  |
 | persistence.data.enabled | bool | `true` |  |
 | persistence.data.mountPath | string | `"/data"` |  |
 | service.main.ports.main.port | int | `25565` |  |

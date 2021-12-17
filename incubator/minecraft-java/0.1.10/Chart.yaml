@@ -1,12 +1,12 @@
 apiVersion: v2
-appVersion: "latest"
+appVersion: "a17"
 dependencies:
 - name: common
   repository: https://truecharts.org
-  version: 8.9.18
-description: Minecraft Bedrock Dedicated Server
-home: https://github.com/Dyllan20000alfa/apps/tree/master/charts/incubator/minecraft-bedrock
-icon: https://raw.githubusercontent.com/Dyllan2000alfa/apps/minecraft/charts/incubator/minecraft-bedrock/icon.png
+  version: 8.9.21
+description: Minecraft Java Dedicated Server
+home: https://github.com/Dyllan20000alfa/apps/tree/master/charts/incubator/minecraft-java
+icon: https://raw.githubusercontent.com/Dyllan2000alfa/apps/minecraft/charts/incubator/minecraft-java/icon.png
 keywords:
   - minecraft
 kubeVersion: ">=1.16.0-0"
@@ -14,11 +14,11 @@ maintainers:
 - email: info@truecharts.org
   name: TrueCharts
   url: https://truecharts.org
-name: minecraft-bedrock
+name: minecraft-java
 sources:
   - https://github.com/itzg/docker-minecraft-server
   - https://hub.docker.com/r/itzg/minecraft-server
-version: 0.0.3
+version: 0.1.10
 annotations:
   truecharts.org/catagories: |
     - media

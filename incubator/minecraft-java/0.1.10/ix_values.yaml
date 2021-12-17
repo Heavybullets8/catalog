@@ -1,6 +1,6 @@
 image:
   repository: itzg/minecraft-server
-  tag: java11
+  tag: java17
   pullPolicy: Always
 
 env:

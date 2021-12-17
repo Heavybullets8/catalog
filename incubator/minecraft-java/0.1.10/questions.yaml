@@ -26,21 +26,26 @@ groups:
   - name: "Advanced"
     description: "Advanced Configuration"
 questions:
-  - variable: portal
+  - variable: image
+    description: "Docker Image Details"
+    label: "Docker Image"
     group: "Container Image"
-    label: "Configure Portal Button"
     schema:
       type: dict
-      hidden: true
+      required: true
       attrs:
-        - variable: enabled
-          label: "Enable"
-          description: "enable the portal button"
+        - variable: tag
+          label: "Java version"
           schema:
-            hidden: true
-            editable: false
-            type: boolean
-            default: true
+            type: string
+            default: "21.26.0-java17"
+            enum:
+              - value: "21.26.0-java8-multiarch"
+                description: "Java 8"
+              - value: "21.26.0-java11"
+                description: "Java 11"
+              - value: "21.26.0-java17"
+                description: "Java 17"
   - variable: global
     label: "global settings"
     group: "Controller"
