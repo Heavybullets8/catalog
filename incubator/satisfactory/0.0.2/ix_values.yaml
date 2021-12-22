@@ -19,6 +19,11 @@ env:
   SKIPUPDATE: false
   STEAMBETA: false
 
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+
 service:
   main:
     ports:

@@ -1,13 +1,13 @@
 apiVersion: v2
 kubeVersion: ">=1.16.0-0"
 name: satisfactory
-version: 0.0.1
+version: 0.0.2
 appVersion: "1.2.3"
 description: Satisfactory App for TrueNAS SCALE
 type: application
 deprecated: false
-home: https://github.com/truecharts/apps/tree/master/charts/stable/satisfactory
-icon: https://raw.githubusercontent.com/truecharts/apps/master/stable/satisfactory/icon.png?raw=true
+home: https://github.com/Dyllan2000alfa/apps/blob/satisfactory/charts/incubator/satisfactory
+icon: https://github.com/Dyllan2000alfa/apps/blob/satisfactory/charts/incubator/satisfactory/icon.png?raw=true
 keywords:
   - satisfactory
 sources:
