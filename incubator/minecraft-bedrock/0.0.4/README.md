@@ -10,7 +10,7 @@ Minecraft Bedrock Dedicated Server
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| TrueCharts | info@truecharts.org | https://truecharts.org |
+| Dyllan Tinoco | dyllan@tinoco.casa |  |
 
 ## Source Code
 
