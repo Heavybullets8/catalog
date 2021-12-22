@@ -200,7 +200,7 @@ questions:
           label: "Enable/Disable Auto pause"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: AUTOSAVEINTERVAL
           label: "Auto save interval"
@@ -218,25 +218,25 @@ questions:
           label: "Auto save on Disconnect"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: CRASHREPORT
           label: "Crash report"
           schema:
             type: boolean
-            required: true
+            required: false
             default: true
         - variable: DEBUG
           label: "Debug"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
         - variable: DISABLESEASONALEVENTS
           label: "Disable seasonal events"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
         - variable: MAXPLAYERS
           label: "Max players"
@@ -248,13 +248,13 @@ questions:
           label: "Skip update"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
         - variable: STEAMBETA
           label: "Steam beta"
           schema:
             type: boolean
-            required: true
+            required: false
             default: false
   - variable: envList
     label: "Image environment"
