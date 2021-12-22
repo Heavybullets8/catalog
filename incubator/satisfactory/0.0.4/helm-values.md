@@ -1,6 +1,6 @@
 # satisfactory
 
-![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.3](https://img.shields.io/badge/AppVersion-1.2.3-informational?style=flat-square)
+![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.3](https://img.shields.io/badge/AppVersion-1.2.3-informational?style=flat-square)
 
 Satisfactory App for TrueNAS SCALE
 
@@ -14,7 +14,8 @@ Satisfactory App for TrueNAS SCALE
 
 ## Source Code
 
-* <https://github.com/truecharts/apps/tree/master/charts/CHARTNAME>
+* <https://github.com/wolveix/satisfactory-server>
+* <https://hub.docker.com/r/wolveix/satisfactory-server>
 
 ## Requirements
 
@@ -36,6 +37,8 @@ Kubernetes: `>=1.16.0-0`
 | env.DEBUG | bool | `false` |  |
 | env.DISABLESEASONALEVENTS | bool | `false` |  |
 | env.MAXPLAYERS | int | `4` |  |
+| env.PGID | int | `568` |  |
+| env.PUID | int | `568` |  |
 | env.SERVERBEACONPORT | int | `15000` |  |
 | env.SERVERGAMEPORT | int | `7777` |  |
 | env.SERVERIP | string | `"0.0.0.0"` |  |

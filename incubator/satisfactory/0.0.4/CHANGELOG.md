@@ -1,6 +1,11 @@
 # Changelog<br>
 
 
+<a name="satisfactory-0.0.4"></a>
+### satisfactory-0.0.4 (2021-12-22)
+
+
+
 <a name="satisfactory-0.0.3"></a>
 ### satisfactory-0.0.3 (2021-12-22)
 

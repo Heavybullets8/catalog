@@ -1,7 +1,7 @@
 apiVersion: v2
 kubeVersion: ">=1.16.0-0"
 name: satisfactory
-version: 0.0.3
+version: 0.0.4
 appVersion: "1.2.3"
 description: Satisfactory App for TrueNAS SCALE
 type: application
@@ -11,7 +11,8 @@ icon: https://github.com/Dyllan2000alfa/apps/blob/satisfactory/charts/incubator/
 keywords:
   - satisfactory
 sources:
-  - https://github.com/truecharts/apps/tree/master/charts/CHARTNAME
+  - https://github.com/wolveix/satisfactory-server
+  - https://hub.docker.com/r/wolveix/satisfactory-server
 dependencies:
 - name: common
   repository: https://truecharts.org
