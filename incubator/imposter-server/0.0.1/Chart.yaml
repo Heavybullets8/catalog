@@ -1,0 +1,27 @@
+apiVersion: v2
+kubeVersion: ">=1.16.0-0"
+name: imposter-server
+version: 0.0.1
+appVersion: "1.6.0"
+description: A private Among Us server for TrueNAS SCALE.
+type: application
+deprecated: false
+home: https://github.com/Dyllan2000alfa/apps/tree/imposter-server/charts/incubator/imposter-server
+icon: https://raw.githubusercontent.com/Dyllan2000alfa/apps/tree/imposter-server/charts/incubator/imposter-server/icon.png?raw=true
+keywords:
+  - imposter-server
+sources:
+  - https://github.com/truecharts/apps/tree/master/incubator/imposter-server
+dependencies:
+- name: common
+  repository: https://truecharts.org
+  version: 8.14.2
+maintainers:
+- email: info@truecharts.org
+  name: TrueCharts
+  url: https://truecharts.org
+annotations:
+  truecharts.org/catagories: |
+    - media
+  truecharts.org/SCALE-support: "true"
+  truecharts.org/grade: U
