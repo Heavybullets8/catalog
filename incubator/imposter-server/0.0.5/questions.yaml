@@ -761,7 +761,7 @@ questions:
                 schema:
                   type: boolean
                   default: false
-                  hidden: true
+                  hidden: false
               - variable: type
                 label: "Type of Storage"
                 description: "Sets the persistence type, Anything other than PVC could break rollback!"
@@ -816,7 +816,7 @@ questions:
                 schema:
                   type: string
                   default: ""
-                  hidden: true
+                  hidden: false
                   valid_chars: '^\/([a-zA-Z0-9._-]+(\s?[a-zA-Z0-9._-]+|\/?))+$'
               - variable: medium
                 label: "EmptyDir Medium"
