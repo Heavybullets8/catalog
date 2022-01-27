@@ -229,7 +229,7 @@ questions:
                   required: false
                   default: false
               - variable: IMPOSTOR_Debug__GameRecorderPath
-                label: "Enable/Disable Anti Cheat"
+                label: "Game Recorder Path"
                 schema:
                   type: string
                   required: false
@@ -760,7 +760,7 @@ questions:
                 label: "Enable the storage"
                 schema:
                   type: boolean
-                  default: true
+                  default: false
                   hidden: true
               - variable: type
                 label: "Type of Storage"
