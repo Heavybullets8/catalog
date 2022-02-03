@@ -30,7 +30,6 @@ service:
     enabled: false
     ports:
       supervisor:
-        enabled: true
+        enabled: false
         port: 22023
         targetPort: 22023
-        

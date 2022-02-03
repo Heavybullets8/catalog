@@ -1,6 +1,6 @@
 # imposter-server
 
-![Version: 0.0.7](https://img.shields.io/badge/Version-0.0.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.6.0](https://img.shields.io/badge/AppVersion-1.6.0-informational?style=flat-square)
+![Version: 0.0.8](https://img.shields.io/badge/Version-0.0.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.6.0](https://img.shields.io/badge/AppVersion-1.6.0-informational?style=flat-square)
 
 A private Among Us server for TrueNAS SCALE.
 
@@ -45,7 +45,7 @@ Kubernetes: `>=1.16.0-0`
 | service.main.ports.main.protocol | string | `"UDP"` |  |
 | service.main.ports.main.targetPort | int | `22023` |  |
 | service.supervisor.enabled | bool | `false` |  |
-| service.supervisor.ports.supervisor.enabled | bool | `true` |  |
+| service.supervisor.ports.supervisor.enabled | bool | `false` |  |
 | service.supervisor.ports.supervisor.port | int | `22023` |  |
 | service.supervisor.ports.supervisor.targetPort | int | `22023` |  |
 
