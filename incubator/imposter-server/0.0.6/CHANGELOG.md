@@ -1,6 +1,11 @@
 # Changelog<br>
 
 
+<a name="imposter-server-0.0.6"></a>
+### imposter-server-0.0.6 (2022-01-27)
+
+
+
 <a name="imposter-server-0.0.5"></a>
 ### imposter-server-0.0.5 (2022-01-27)
 
