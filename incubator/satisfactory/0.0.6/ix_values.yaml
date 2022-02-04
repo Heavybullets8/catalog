@@ -4,6 +4,8 @@ image:
   tag: v1.2.3@sha256:5860dbac9fc8cb2e6010b69e60e633d06e25e2a0152f8858a8f23acda7c3c719
 
 env:
+  PUID: 568
+  PGID: 568
   AUTOPAUSE: true
   AUTOSAVEINTERVAL: 300
   AUTOSAVENUM: 3
@@ -18,8 +20,6 @@ env:
   SERVERQUERYPORT: 15777
   SKIPUPDATE: false
   STEAMBETA: false
-  PGID: 568
-  PUID: 568
 
 persistence:
   config:

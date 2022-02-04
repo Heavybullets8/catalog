@@ -241,18 +241,6 @@ questions:
             type: boolean
             required: false
             default: false
-        - variable: PGID
-          label: "PGID"
-          schema:
-            type: int
-            required: false
-            default: 568
-        - variable: PUID
-          label: "PUID"
-          schema:
-            type: int
-            required: false
-            default: 568
   - variable: envList
     label: "Image environment"
     group: "Container Configuration"
