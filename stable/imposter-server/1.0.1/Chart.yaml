@@ -1,7 +1,7 @@
 apiVersion: v2
 kubeVersion: ">=1.16.0-0"
 name: imposter-server
-version: 1.0.0
+version: 1.0.1
 appVersion: "nightly"
 description: A private Among Us server for TrueNAS SCALE.
 type: application

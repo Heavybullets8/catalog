@@ -3,15 +3,9 @@ image:
   pullPolicy: IfNotPresent
   tag: nightly@sha256:5909ea16b303f785afc6cd53d693771a2a1c0783b3438adb50c5b877fe4e1ad8
 
-securityContext:
-  readOnlyRootFilesystem: false
-  runAsNonRoot: false
-
-podSecurityContext:
-  runAsUser: 0
-  runAsGroup: 0
-
 env:
+  PUID: 568
+  USER_ID: "{{ .Values.env.PUID }}"
   IMPOSTOR_Server__PublicIp: "127.0.0.1"
   IMPOSTOR_Server__ListenIp: "0.0.0.0"
   IMPOSTOR_AntiCheat__Enabled: true

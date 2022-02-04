@@ -1,6 +1,6 @@
 # imposter-server
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: nightly](https://img.shields.io/badge/AppVersion-nightly-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: nightly](https://img.shields.io/badge/AppVersion-nightly-informational?style=flat-square)
 
 A private Among Us server for TrueNAS SCALE.
 
@@ -34,16 +34,14 @@ Kubernetes: `>=1.16.0-0`
 | env.IMPOSTOR_Debug__GameRecorderPath | string | `""` |  |
 | env.IMPOSTOR_Server__ListenIp | string | `"0.0.0.0"` |  |
 | env.IMPOSTOR_Server__PublicIp | string | `"127.0.0.1"` |  |
+| env.PUID | int | `568` |  |
+| env.USER_ID | string | `"{{ .Values.env.PUID }}"` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"aeonlucid/impostor"` |  |
 | image.tag | string | `"nightly@sha256:5909ea16b303f785afc6cd53d693771a2a1c0783b3438adb50c5b877fe4e1ad8"` |  |
-| podSecurityContext.runAsGroup | int | `0` |  |
-| podSecurityContext.runAsUser | int | `0` |  |
 | probes.liveness | object | See below | Liveness probe configuration |
 | probes.readiness | object | See below | Redainess probe configuration |
 | probes.startup | object | See below | Startup probe configuration |
-| securityContext.readOnlyRootFilesystem | bool | `false` |  |
-| securityContext.runAsNonRoot | bool | `false` |  |
 | service.main.ports.main.port | int | `22023` |  |
 | service.main.ports.main.protocol | string | `"UDP"` |  |
 | service.main.ports.main.targetPort | int | `22023` |  |
