@@ -1,7 +1,7 @@
 image:
   repository: aeonlucid/impostor
   pullPolicy: IfNotPresent
-  tag: 1.6.0@sha256:fbfe8e95db116771c488570e20834f3038501741745db60031e05b282fce00c3
+  tag: nightly@sha256:5909ea16b303f785afc6cd53d693771a2a1c0783b3438adb50c5b877fe4e1ad8
 
 securityContext:
   readOnlyRootFilesystem: false
@@ -16,7 +16,7 @@ env:
   IMPOSTOR_Server__ListenIp: "0.0.0.0"
   IMPOSTOR_AntiCheat__Enabled: true
   IMPOSTOR_AntiCheat__BanIpFromGame: true
-  IMPOSTOR_Debug__GameRecorderEnabled: true
+  IMPOSTOR_Debug__GameRecorderEnabled: false
   IMPOSTOR_Debug__GameRecorderPath: ""
 
 service:
