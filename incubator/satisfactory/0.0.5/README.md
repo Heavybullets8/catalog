@@ -1,6 +1,6 @@
 # satisfactory
 
-![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.3](https://img.shields.io/badge/AppVersion-1.2.3-informational?style=flat-square)
+![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.3](https://img.shields.io/badge/AppVersion-1.2.3-informational?style=flat-square)
 
 Satisfactory App for TrueNAS SCALE
 
@@ -50,6 +50,9 @@ Kubernetes: `>=1.16.0-0`
 | image.tag | string | `"v1.2.3@sha256:5860dbac9fc8cb2e6010b69e60e633d06e25e2a0152f8858a8f23acda7c3c719"` |  |
 | persistence.config.enabled | bool | `true` |  |
 | persistence.config.mountPath | string | `"/config"` |  |
+| probes.liveness | object | See below | Liveness probe configuration |
+| probes.readiness | object | See below | Redainess probe configuration |
+| probes.startup | object | See below | Startup probe configuration |
 | service.beacon.enabled | bool | `true` |  |
 | service.beacon.ports.beacon.enabled | bool | `true` |  |
 | service.beacon.ports.beacon.port | int | `15000` |  |
