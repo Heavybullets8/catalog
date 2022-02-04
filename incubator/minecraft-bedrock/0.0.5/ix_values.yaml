@@ -1,9 +1,11 @@
 image:
   repository: itzg/minecraft-bedrock-server
-  tag: latest
+  tag: 2022.1.0@sha256:fd753dd3fbee83944baf4982e481a7d48a4d52387d6bd3916628335e8bdb4ed6
   pullPolicy: Always
 
 env:
+  PUID: 568
+  PGID: 568
   EULA: "FALSE"
   VERSION: "LATEST"
   SERVER_NAME: "Dedicated Server on TrueNAS Scale!"
@@ -31,7 +33,7 @@ env:
   CORRECT_PLAYER_MOVEMENT: false
 
 persistence:
-  data:
+  config:
     enabled: true
     mountPath: "/data"
 

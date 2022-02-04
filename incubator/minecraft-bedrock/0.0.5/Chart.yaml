@@ -1,9 +1,9 @@
 apiVersion: v2
-appVersion: "latest"
+appVersion: "2022.1.0"
 dependencies:
 - name: common
   repository: https://truecharts.org
-  version: 8.9.21
+  version: 8.14.5
 description: Minecraft Bedrock Dedicated Server
 home: https://github.com/Dyllan20000alfa/apps/tree/master/charts/incubator/minecraft-bedrock
 icon: https://raw.githubusercontent.com/Dyllan2000alfa/apps/minecraft/charts/incubator/minecraft-bedrock/icon.png
@@ -18,7 +18,7 @@ name: minecraft-bedrock
 sources:
   - https://github.com/itzg/docker-minecraft-server
   - https://hub.docker.com/r/itzg/minecraft-server
-version: 0.0.4
+version: 0.0.5
 annotations:
   truecharts.org/catagories: |
     - media
