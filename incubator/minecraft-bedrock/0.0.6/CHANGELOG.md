@@ -1,6 +1,11 @@
 # Changelog<br>
 
 
+<a name="minecraft-bedrock-0.0.6"></a>
+### minecraft-bedrock-0.0.6 (2021-12-20)
+
+
+
 <a name="minecraft-bedrock-0.0.5"></a>
 ### minecraft-bedrock-0.0.5 (2021-12-20)
 

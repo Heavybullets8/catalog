@@ -1,6 +1,6 @@
 # minecraft-bedrock
 
-![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![AppVersion: 2022.1.0](https://img.shields.io/badge/AppVersion-2022.1.0-informational?style=flat-square)
+![Version: 0.0.6](https://img.shields.io/badge/Version-0.0.6-informational?style=flat-square) ![AppVersion: 2022.1.0](https://img.shields.io/badge/AppVersion-2022.1.0-informational?style=flat-square)
 
 Minecraft Bedrock Dedicated Server
 
@@ -35,24 +35,24 @@ Kubernetes: `>=1.16.0-0`
 | env.DIFFICULTY | string | `"easy"` |  |
 | env.EULA | string | `"FALSE"` |  |
 | env.GAMEMODE | string | `"survival"` |  |
+| env.GID | int | `568` |  |
 | env.LEVEL_NAME | string | `"Bedrock level"` |  |
 | env.LEVEL_SEED | string | `""` |  |
 | env.LEVEL_TYPE | string | `"DEFAULT"` |  |
 | env.MAX_PLAYERS | int | `10` |  |
 | env.MAX_THREADS | int | `8` |  |
 | env.ONLINE_MODE | bool | `true` |  |
-| env.PGID | int | `568` |  |
 | env.PLAYER_IDLE_TIMEOUT | int | `30` |  |
 | env.PLAYER_MOVEMENT_DISTANCE_THRESHOLD | float | `0.3` |  |
 | env.PLAYER_MOVEMENT_DURATION_THRESHOLD_IN_MS | int | `500` |  |
 | env.PLAYER_MOVEMENT_SCORE_THRESHOLD | int | `20` |  |
-| env.PUID | int | `568` |  |
 | env.SERVER_AUTHORITATIVE_MOVEMENT | string | `"server-auth"` |  |
 | env.SERVER_NAME | string | `"Dedicated Server on TrueNAS Scale!"` |  |
 | env.SERVER_PORT | int | `19132` |  |
 | env.SERVER_PORT_V6 | int | `19133` |  |
 | env.TEXTUREPACK_REQUIRED | bool | `false` |  |
 | env.TICK_DISTANCE | int | `4` |  |
+| env.UID | int | `568` |  |
 | env.VERSION | string | `"LATEST"` |  |
 | env.VIEW_DISTANCE | int | `32` |  |
 | env.WHITE_LIST | bool | `false` |  |
@@ -61,6 +61,9 @@ Kubernetes: `>=1.16.0-0`
 | image.tag | string | `"2022.1.0@sha256:fd753dd3fbee83944baf4982e481a7d48a4d52387d6bd3916628335e8bdb4ed6"` |  |
 | persistence.config.enabled | bool | `true` |  |
 | persistence.config.mountPath | string | `"/data"` |  |
+| probes.liveness | object | See below | Liveness probe configuration |
+| probes.readiness | object | See below | Redainess probe configuration |
+| probes.startup | object | See below | Startup probe configuration |
 | service.main.ports.main.port | int | `19132` |  |
 | service.main.ports.main.protocol | string | `"UDP"` |  |
 | service.main.ports.main.targetPort | int | `19132` |  |
